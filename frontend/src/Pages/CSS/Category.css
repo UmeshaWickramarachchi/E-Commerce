@@ -1,0 +1,23 @@
+.category-products {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
+    margin: 5px 10px; /* Adds space around the grid */
+    justify-content: center; /* Centers content */
+    overflow: hidden;
+    column-gap: 10px;
+    
+}
+
+/* Image Styling */
+.category-products img {
+    width: 100%; /* Makes images fill grid cell */
+    max-width: 250px; /* Prevents images from being too large */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.category-products img:hover {
+    transform: scale(1.05);
+}

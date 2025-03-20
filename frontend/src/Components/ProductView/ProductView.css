@@ -1,0 +1,155 @@
+.productView {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+
+/* Left Side */
+.productView-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.productView-img-list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.productView-img-list img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.productView-img-list img:hover {
+    transform: scale(1.1);
+}
+
+.productView-main-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Right Side */
+.productView-right {
+    width: 50%;
+}
+
+.productView-right h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.productView-right-star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.productView-right-star img {
+    width: 20px;
+    height: 20px;
+}
+
+.productView-right-star p {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Prices */
+.productView-right-prices {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.product-right-price-old {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 16px;
+}
+
+.productView-right-price-new {
+    color: #ff4d00;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Description */
+.productView-rigth-desc {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* Size Selection */
+.productView-right-size h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-right-size {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.product-right-size div {
+    padding: 8px 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.product-right-size div:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Button Styling */
+.productView button {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Button Hover Effect */
+.productView button:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-3px); /* Moves button up slightly */
+}
+
+
+/* Category & Tags */
+.productView-right-category {
+    font-size: 14px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.productView-right-category span {
+    font-weight: bold;
+}

@@ -1,0 +1,113 @@
+/* Hero Container */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center align content */
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  position: relative;
+  overflow: hidden; /* Prevents unwanted scroll */
+}
+
+/* Left Section (Text) */
+.hero-left {
+  position: absolute; /* Position text over the image */
+  top: 50%; /* Center text vertically */
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 2; /* Ensure text is on top */
+  padding: 20px;
+}
+
+.hero-left h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-left p {
+  font-size: 2rem;
+  margin: 10px 0;
+  font-weight: 2.;
+}
+
+.hand-hand-icon {
+  display: flex;
+  align-items: center;
+}
+
+.hand-hand-icon p {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+/* Button Styling */
+.hero-latest-btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  width: 300px;
+  transition: background-color 0.3s;
+}
+
+.arrow-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.hero-latest-btn:hover {
+  background-color: #555;
+}
+
+/* Right Section (Image) */
+.hero-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the whole image fills the space */
+  object-position: top; /* Adjust to show more of the top part */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .hero-left {
+      text-align: center;
+      max-width: 100%;
+      padding: 10px;
+  }
+
+  .hero-left h2 {
+      font-size: 2.5rem;
+  }
+
+  .hero-left p {
+      font-size: 1.2rem;
+  }
+
+  .hero-latest-btn {
+      font-size: 1rem;
+  }
+}

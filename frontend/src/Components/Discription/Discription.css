@@ -1,0 +1,48 @@
+/* Main Container */
+.discription {
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Tabs */
+.discription-nav {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.discription-nav-box {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 3px solid black;
+}
+
+.discription-nav-box-fade {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s ease-in-out;
+}
+
+.discription-nav-box-fade:hover {
+    color: black;
+}
+
+/* Description Content */
+.discription-desc {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+}
+
+.discription-desc p {
+    margin-bottom: 15px;
+}
