@@ -1,0 +1,9 @@
+.category-products {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: 1fr 1fr 1fr; /* 4 columns */
+    margin: 5px 10px; /* Adds space around the grid */
+    justify-content: center; /* Centers content */
+    overflow: hidden;
+    column-gap: 10px;
+    
+}
