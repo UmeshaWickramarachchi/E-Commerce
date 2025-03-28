@@ -1,30 +1,30 @@
-import p1_img from './product_1.png'
-import p2_img from './product_2.png'
-import p3_img from './product_3.png'
-import p4_img from './product_4.png'
+import p1_img from './product_13.png'
+import p2_img from './product_16.png'
+import p3_img from './product_8.png'
+import p4_img from './product_9.png'
 
 let data_product = [
   {
     id:1,
-    name:"Urban Wide-Leg Jeans",
+    name:"Gritstones Black Oversized Self Design Shirt",
     image:p1_img,
     new_price:50.00,
     old_price:80.50,
   },
   {id:2,
-    name:"Urban Wide-Leg Jeans",
+    name:"JUARI BE A GENTLEMAN Men Self Design Casual",
     image:p2_img,
     new_price:85.00,
     old_price:120.50,
   },
   {id:3,
-    name:"Urban Wide-Leg Jeans",
+    name:"Beautiful Apparel Lady Fashion Clothes",
     image:p3_img,
     new_price:60.00,
     old_price:100.50,
   },
   {id:4,
-    name:"Urban Wide-Leg Jeans",
+    name:"Guo Pei China s Homegrown High-Fashion Designer The New Yorker",
     image:p4_img,
     new_price:100.00,
     old_price:150.00,

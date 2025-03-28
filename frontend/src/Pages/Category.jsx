@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./CSS/Category.css";
 import { ShopContext } from "../Context/ShopContext";
 import { Dropdown } from "react-bootstrap";
@@ -6,18 +6,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Item } from "../Components/Item/Item";
 
 export const Category = (props) => {
-  const { all_product } = useContext(ShopContext);
-
+  const { allItems, images } = useContext(ShopContext);
+  
   return (
     <div className="category">
       <div className="category-indexSort d-flex justify-content-between align-items-center p-3">
         <p>
-          <span>Showing 1-12</span> out of 36 products
+          <span>Showing 1-12</span> out of {allItems.length} products
         </p>
 
-        {/* Flex container to align "Sort by" text and dropdown */}
         <div className="d-flex align-items-center">
-          <p className="mb-0 me-2">Sort by</p> {/* Sort by text */}
+          <p className="mb-0 me-2">Sort by</p>
 
           <Dropdown>
             <Dropdown.Toggle variant="secondary" id="dropdown-basic">
@@ -35,21 +34,22 @@ export const Category = (props) => {
 
       {/* Display Product Images */}
       <div className="category-products">
-        {all_product.map((item,i) => {
-          if(props.category===item.category){
-             return <Item
-                            key={i}
-                            id={item.id}
-                            name={item.name}
-                            image={item.image}
-                            new_price={item.new_price}
-                            old_price={item.old_price}
-                          />
+        {allItems.map((item, i) => {
+          if (props.category === item.category) {
+            return (
+              <Item
+                key={i}
+                id={item.id}
+                name={item.name}
+                image={images[item.image]} // Get image by ID
+                new_price={item.new_price}
+                old_price={item.old_price}
+                category={item.category}
+              />
+            );
           }
-          else{
-            return null;
-          }
-})}
+          return null; // Return null if the condition is not met
+        })}
       </div>
     </div>
   );

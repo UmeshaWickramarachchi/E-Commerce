@@ -13,7 +13,7 @@
 /* Left Section (Text) */
 .hero-left {
   position: absolute; /* Position text over the image */
-  top: 50%; /* Center text vertically */
+  top: 60%; /* Center text vertically */
   left: 5%;
   transform: translateY(-50%);
   color: white;

@@ -4,20 +4,20 @@ import star_icon from "../Assets/star_icon.png"
 import star_dull_icon from "../Assets/star_dull_icon.png"
 import { ShopContext } from '../../Context/ShopContext'
 export const ProductView = (props) => {
-    const {product} =props;
+    const {product, image} =props;
     const {addToCart} = useContext(ShopContext);
 
   return (
     <div className='productView'>
         <div className="productView-left">
             <div className="productView-img-list">
-                <img src={product.image} alt=""/>
-                <img src={product.image} alt=""/>
-                <img src={product.image} alt=""/>
-                <img src={product.image} alt=""/>
+                <img src={image} alt=""/>
+                <img src={image} alt=""/>
+                <img src={image} alt=""/>
+                <img src={image} alt=""/>
             </div>
             <div className="productView-img">
-                <img className='productView-main-img' src={product.image} alt=""/>
+                <img className='productView-main-img' src={image} alt=""/>
             </div>
         </div>
         <div className="productView-right">
